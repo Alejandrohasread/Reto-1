@@ -19,18 +19,19 @@
 }
 
 .profile__container {
-  display: flex;
-  gap: 2rem; 
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  gap: 2rem;
   max-width: 1024px; 
   margin: 0 auto;
-  padding: 0 1rem;
+  padding: 20px;
 }
 
 .card {
   border-radius: 1rem;
   box-shadow: 0 0 0.125rem 0.125rem white;
   overflow: hidden;
-  max-width: 320px;
+  max-width: 1056px;
   transition: box-shadow .25s;
 }
 
@@ -127,11 +128,22 @@
 }
 
 @media (min-width: 854px) {
+  .profile__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    max-width: 1400px;
+  }
 
   .card {
     max-width: 512px;
  
 }
+
+.card__header-img-container {
+  width: 200px;
+  height: 200px;
+}
+
   .card__body{
   gap: 1rem;
   padding: 2rem;
