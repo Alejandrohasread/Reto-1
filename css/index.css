@@ -20,7 +20,7 @@
 
 .profile__container {
   display: grid;
-  grid-template-columns: 1fr 1fr; 
+  grid-template-columns: 1fr; 
   gap: 2rem;
   max-width: 1024px; 
   margin: 0 auto;
@@ -127,7 +127,7 @@
   height: 100%;
 }
 
-@media (min-width: 854px) {
+@media (min-width: 1080px) {
   .profile__container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr; 
