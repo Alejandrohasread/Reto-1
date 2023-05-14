@@ -71,7 +71,7 @@
   overflow: hidden;
   max-width: 1056px;
   transition: box-shadow .25s;
-  height: 662px;
+  align-items: stretch;
   
 }
 
@@ -193,19 +193,27 @@
   margin: auto 50px;
 }
 
-@media (min-width: 1080px) {
+@media (min-width: 1230px) {
   .profile__container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr; 
     max-width: 1400px;
   }
 
-  .card {
-    max-width: 512px;
-   
-    
  
-}
+  .card__body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  background-color: var(--primary-shadow-color);
+  background-size: 100%;
+  padding: 1rem;
+
+} 
+    
+
+
+
 
 .card__header-img-container {
   width: 200px;
